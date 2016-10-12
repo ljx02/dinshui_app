@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#e2f4fc"
+    tools:context="com.example.lenovo.supwater.MainActivity">
+    <TextView
+        android:paddingTop="20dp"
+        android:text="supwater订水"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title" />
+    <TextView
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:id="@+id/shuipiao"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="120sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="剩余水票"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shuipiao"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+    <LinearLayout
+        android:layout_below="@+id/textView"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/b1"
+            android:paddingTop="50dp"
+            android:layout_below="@+id/textView"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:background="#49f826"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="一键订水"
+                android:onClick="dinshui"
+                android:textSize="30sp"
+                android:id="@+id/button"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textSize="30sp"
+                android:text="确认收水"
+                android:onClick="shoushui"
+                style="@style/Ap1"
+                android:id="@+id/button10"
+                android:background="#ff2a38"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/b1"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="购买水票"
+                android:onClick="goumai"
+                android:id="@+id/button2"
+                android:textSize="30sp"
+                android:background="#fef056"
+                android:textColor="#ffffff" />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="个人主页"
+                android:id="@+id/button3"
+                android:textSize="30sp"
+                android:background="#3797fc"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
